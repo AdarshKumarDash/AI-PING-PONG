@@ -1,6 +1,19 @@
+function preload() {
+  balltouch = loadSound("ball_touch_paddel.wav");
+  missed = loadSound("missed.wav");
+}
 
+// function setup() {
+//   canvas = createCanvas(640, 480);
+//   canvas.parent("canvas");
+//   canvas.center();
+//   video = createCapture(VIDEO);
+//   video.hide();
+// }
 
-
+// function draw() {
+//   image(video, 0, 0, 640, 480);
+// }
 
 
 
