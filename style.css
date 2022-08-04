@@ -37,3 +37,12 @@ body {
     text-decoration: none;
     color: #1d1df4;
 }
+
+ol li {
+    font-size: 18px;
+}
+
+.modal-dialog {
+    width: 90%;
+    margin-top: 10%;
+}
