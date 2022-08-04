@@ -1,0 +1,39 @@
+body {
+    background-image: url("background1.jpg");
+    background-size: cover;
+}
+
+.hding {
+    width: 100% !important;
+    text-align: left;
+    margin: 0;
+}
+
+.hding h2 {
+    display: inline;
+    color: tomato;
+}
+
+.hding button {
+    float: right;
+}
+
+.footer {
+    bottom: 0;
+    width: 100%;
+    position: fixed;
+    font-size: 20px;
+    background-color: rgb(200, 196, 196);
+}
+
+.footer a {
+    text-decoration: none;
+    color: darkblue;
+    transition: 0.3s all;
+    font-weight: 700;
+}
+
+.footer a:hover {
+    text-decoration: none;
+    color: #1d1df4;
+}
