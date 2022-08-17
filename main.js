@@ -3,17 +3,22 @@ function preload() {
   missed = loadSound("missed.wav");
 }
 
-// function setup() {
-//   canvas = createCanvas(640, 480);
-//   canvas.parent("canvas");
-//   canvas.center();
-//   video = createCapture(VIDEO);
-//   video.hide();
-// }
+function setup() {
+  canvas = createCanvas(640, 480);
+  canvas.parent("canvas");
+  canvas.center();
+  video = createCapture(VIDEO);
+  video.hide();
+  posenet = ml5.poseNet(video, modelloaded);
+}
 
-// function draw() {
-//   image(video, 0, 0, 640, 480);
-// }
+function modelloaded() {
+  console.log("Model is loaded!");
+}
+
+function draw() {
+  image(video, 0, 0, 640, 480);
+}
 
 
 
