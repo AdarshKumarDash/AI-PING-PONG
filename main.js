@@ -1,3 +1,7 @@
+rightwristx = "";
+rightwristy = "";
+rightwristscore = "";
+
 function preload() {
   balltouch = loadSound("ball_touch_paddel.wav");
   missed = loadSound("missed.wav");
@@ -10,14 +14,29 @@ function setup() {
   video = createCapture(VIDEO);
   video.hide();
   posenet = ml5.poseNet(video, modelloaded);
+  posenet.on("pose", gotPoses);
 }
 
 function modelloaded() {
   console.log("Model is loaded!");
 }
 
+function gotPoses(results) {
+  if (results.length > 0) {
+    console.log(results);
+    rightwristx = results[0].pose.rightWrist.x;
+		rightwristy = results[0].pose.rightWrist.y;
+    rightwristscore = results[0].pose.rightWrist.confidence;
+    console.log(rightwristx, rightwristy);
+  }
+}
+
 function draw() {
   image(video, 0, 0, 640, 480);
+  if (rightwristscore > 0.2) {
+    fill("red");
+    circle(rightwristx, rightwristy, 30)
+  }
 }
 
 
