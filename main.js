@@ -25,7 +25,6 @@ var ball = {
 rightWristY = 0;
 rightWristX = 0;
 scoreRightWrist = 0;
-
 game_status = "";
 
 function preload() {
@@ -52,7 +51,7 @@ function modelLoaded() {
 function restart() {
   pcscore = 0;
   playerscore = 0;
-  noloop();
+  loop();
 }
 
 function gotPoses(results) {
