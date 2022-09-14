@@ -1,54 +1,41 @@
-body {
-    background-image: url("background1.jpg");
-    background-size: cover;
-}
 
-.hding {
-    width: 100% !important;
-    text-align: left;
-    margin: 0;
+.heading
+{
+width: 100%;
+text-align: left;
 }
-
-.hding h2 {
+.heading h3{
     display: inline;
-    color: gold;
 }
 
-.hding button {
+.heading button{
     float: right;
+    border: 1px solid white;
 }
 
-.footer {
-    bottom: 0;
-    width: 100%;
-    position: fixed;
+#start ,#status, #restart
+{
+font-size: 22px;
+}
+
+.modal-dialog
+{
+    width: 70%;
+}
+.modal-body
+{
+    text-align: left;
     font-size: 20px;
-    background-color: rgb(200, 196, 196);
 }
-
-.footer a {
-    text-decoration: none;
-    color: darkblue;
-    transition: 0.3s all;
-    font-weight: 700;
+h4
+{
+   background-color: grey;
+   color:white;
+   line-height: 2;
 }
-
-.footer a:hover {
-    text-decoration: none;
-    color: #1d1df4;
-}
-
-ol li {
-    font-size: 18px;
-}
-
-.modal-dialog {
-    width: 90%;
-    margin-top: 10%;
-}
-
-canvas{
-    border: coral;
-    border-radius: 5px;
-    box-shadow: 0 0 2px 5px grey;
-}
+canvas 
+  {
+      border:3px solid white;
+      border-radius: 20px;
+      box-shadow:  5px 5px 5px white;
+  }
